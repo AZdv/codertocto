@@ -62,6 +62,7 @@
         }
         header .cover-wrapper {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             margin-bottom: 4rem;
@@ -140,11 +141,71 @@
         .newsletter-form button:hover {
             background-color: #444;
         }
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 14px; /* Adjust base font size for mobile */
+            }
+
+            h1 {
+                font-size: 2rem; /* Smaller font size for headers */
+            }
+
+            p {
+                font-size: 1rem; /* Smaller paragraph text */
+            }
+            header {
+                height: auto;
+                margin-top: 20px;
+            }
+            header a {
+                width: 80%;
+            }
+            header .cover-wrapper {
+                flex-direction: column; /* Stack elements vertically on smaller screens */
+                padding: 0 20px; /* Reduce side padding */
+            }
+            header .cover-wrapper img {
+                max-width: 100%;
+                height: auto;
+            }
+            header a.cover {
+                margin-bottom: 20px; /* Add space between stacked elements */
+            }
+            header .cover-wrapper section {
+                margin: 0 10px;
+            }
+            header h1 {
+                font-size: 2.5rem; /* Reduce font size for smaller screens */
+                letter-spacing: 2px;
+                word-spacing: normal;
+            }
+
+            header h2, section h2 {
+                font-size: 1.2rem;
+            }
+            section {
+                padding: 0;
+            }
+            section p {
+                font-size: 1rem;
+                padding: 0 20px; /* Add padding for text readability on mobile */
+            }
+
+            .newsletter-form input[type="email"] {
+                width: 80%; /* Adjust input width to fit smaller screens */
+                margin-bottom: 10px; /* Add margin for better stacking */
+            }
+
+            .newsletter-form button {
+                width: 80%; /* Button takes up more space on mobile */
+            }
+        }
+
     </style>
 </head>
 <body>
     <div id="background"></div>
-    <header>
+     <header>
         <h1>From Coder To CTO</h1>
         <h2>The Power of Technical Blogging in Tech Careers</h2>
         <div class="cover-wrapper">
@@ -179,6 +240,5 @@
     <footer>
         <p>&copy; 2024 Asaf Zamir. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
