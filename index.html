@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Coder To CTO</title>
+    <style>
+        @font-face {
+            font-family: 'Freshman';
+            src: url('Freshman.ttf') format('truetype');
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+/*            background-image: url('cover-bg.png');
+            background-size: cover;
+            background-position: center;
+*/            margin: 0;
+            padding: 0;
+        }
+        #background {
+
+/*            background-position: center center;*/
+            background-repeat: round;
+/*            background-size: auto;*/
+            background-attachment: fixed;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            background-image: url('cover-bg.png');
+            background-size: cover;
+            background-position: center;
+            /*background-attachment: fixed;
+            background-repeat: round;*/
+            background-position-y: 28%;            
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000;
+        }
+        header h1 {
+            font-family: "Freshman", monospace;
+            letter-spacing: 6px;
+            word-spacing: 14px;
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        header h2 {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        header .cover-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        header .cover-wrapper section {
+            flex: 1;
+            margin: 0 20px;
+        }
+        header a {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 20px 30px;
+            text-decoration: none;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            transition: transform 0.3s ease;
+        }
+        header a:hover {
+            transform: scale(1.02);
+        }
+        header a.cover {
+            border-radius: 10px;
+            padding: 14px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), 0 0 45px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+        }
+        header a.cover:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.2), 0 0 55px rgba(0, 0, 0, 0.3);
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .newsletter-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .newsletter-form input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            font-size: 1rem;
+        }
+        .newsletter-form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter-form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <header>
+        <h1>From Coder To CTO</h1>
+        <h2>The Power of Technical Blogging in Tech Careers</h2>
+        <div class="cover-wrapper">
+            <section>
+                <a class="cover" href="#"><img src="cover.png" /></a>
+            </section>
+            <section>
+                <h2>About the Book</h2>
+                <p>Embark on a transformative journey from writing code to leading tech teams. Learn how technical blogging can skyrocket your career in the ever-evolving world of technology.</p>
+                <a href="#ebook">Get the Ebook</a>
+                <a href="#paperback">Get the Paperback</a>
+            </section>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Unlock the Power of Technical Blogging</h2>
+        <p>
+            Discover how sharing your knowledge online can catapult your career to new heights.<br />
+            Learn to craft compelling technical content, build a personal brand, and advance from coder to CTO.
+        </p>
+    </section>
+
+    <section id="newsletter">
+        <h2>Subscribe for Updates</h2>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Asaf Zamir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
