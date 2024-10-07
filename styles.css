@@ -61,7 +61,7 @@ header .cover-wrapper section {
     flex: 1;
     margin: 0 20px;
 }
-header a {
+header a, #about a {
     display: inline-block;
     background-color: #000;
     color: #fff;
@@ -71,6 +71,12 @@ header a {
     border-radius: 5px;
     font-size: 1.6rem;
     transition: transform 0.3s ease;
+}
+#about a {
+    font-size: 1.8rem;
+}
+#about a:hover {
+    transform: scale(1.02);
 }
 header a:hover {
     transform: scale(1.02);
