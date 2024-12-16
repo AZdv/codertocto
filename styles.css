@@ -32,11 +32,6 @@ header {
     align-items: center;
     text-align: center;
     color: #000;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    user-select: none;
 }
 header h1 {
     font-family: "Freshman", monospace;
